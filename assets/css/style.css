@@ -22,6 +22,7 @@ header{
     background-position: bottom;
     border-bottom: 5px solid gold;
     text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+	box-shadow: inset 50px 50px 50px 50px rgba(0, 0, 0, 0.5);
     
 }
 
@@ -29,10 +30,11 @@ header div{
     text-align: center;
     margin: 0 auto;
 }
+
 nav {
     text-align: center;
-    margin-top: 5%;
     font-weight: bold;
+    margin-top: 7.5%;
     
 }
 h1{
@@ -41,7 +43,7 @@ h1{
     font-weight: bold;
     font-size: xx-large;
     font-family: 'Playfair Display', Georgia, serif;
-    
+      
 }
  
 
@@ -52,31 +54,29 @@ nav ul li a{
     margin: 59% 2px; 
     padding: 10px 18px;
     border-radius: 10%;
+    color: white;
 }
 nav ul li a:hover{
     border: 1px solid hsl(45, 90%, 60%);
     background-color: hsl(45, 90%, 60%)
 ;
 }
-
 nav li{
     display: inline-block;
     text-align: center;
     text-decoration: none;
      
 }
-ul{
-    padding: 0%;
-}
-nav ul li:not(:last-child){
-margin: 0;    
-}
-nav a{
-    color:white;
+main{
+    max-width: 920px;
+    padding:auto;
+    margin:auto;
+    text-align:centre;
 }
 
 main section{
-    height: fit-content;
+height: fit-content;
+  
 }
 img{
     float: left;
@@ -96,9 +96,7 @@ img+p::first-letter{
     margin-top: -5%;
     width:auto;
 }
-.section1 h2{
-    clear: both;
-}
+
 section{
     border: 1px solid whitesmoke;
     border-radius: 3%;
@@ -113,15 +111,21 @@ section:not(:first-child){
 .layout{
     padding: 3% 4%;
 }
-progress{
-    display: block;
-}
-progress::-webkit-progress-bar{
+.bar {
     background-color: #ece6d8;
-    
+    border-radius: 6px;
+    height: 12px;
+    width: 100%;
+    margin-top: 10px;
 }
-progress::-webkit-progress-value{
+
+.bar-fill {
     background-color: hsl(45, 90%, 50%);
+    height: 100%;
+    border-radius: 6px;
+}
+.line{
+    width: 50%;
 }
 .intTab{
     color: hsl(220, 30%, 40%);
@@ -131,6 +135,7 @@ progress::-webkit-progress-value{
 color:hsl(220, 60%, 25%) ;
 background-color: #f4f1ec;
 
+
 }
 .icons2{
     margin: 2% 2% 2% 0;
@@ -139,7 +144,23 @@ background-color: #f4f1ec;
 }
 .table1 tbody td{
     border-bottom: 1px solid #ece6d8;
+    border-collapse: collapse;
 }
+.table2{
+    table-layout: auto;
+    width: 100%;
+}
+.table2 tbody td{
+    border-bottom: 1px solid #ece6d8;
+}
+.table2 thead{
+color:hsl(220, 60%, 25%) ;
+background-color: #f4f1ec;  
+}
+.table2 td, .table2 th{
+    padding: 3% 3%;
+}
+
 .gold{
     color: hsl(45, 90%, 50%);
     font-weight: bolder;
@@ -148,6 +169,7 @@ background-color: #f4f1ec;
 .blue{
     color: hsl(220, 60%, 25%);
     font-family: 'Playfair Display', Georgia, serif;
+    font-size: xx-large;
 }
 
 .red{
@@ -157,34 +179,106 @@ background-color: #f4f1ec;
 .italic{
     font-style: italic;
 }
-section ul :first-child{
+
+.odd{
+    background-color: #f4f1ec;
+    border-left: 3px solid  hsl(220, 60%, 30%);
+    border-radius: 2%;
+
+}
+.even{
+     border-left: 3px solid  hsl(45, 90%, 50%);
+    border-radius: 2%;
+
+}
+.layout h4{
+    font-family: 'Playfair Display', Georgia, serif;
+    color: hsl(220, 30%, 40%);
+    font-size: large;
+    padding-left: 2%;
+    padding-top: 3%;
     font-weight: bold;
 }
-section ul li:nth-child(odd){
-    background-color: rgb(240, 239, 239);
+.layout p{
+    padding-left: 2%;
+}
+.layout a{
+    padding-left: 2%;
+    text-decoration: none;
+    margin-top: 2%;
+    color: hsl(220, 60%, 30%);
+    font-weight: bold;
+}
+.layout a:hover{
+    text-decoration: underline;
+    text-decoration-color:  hsl(45, 90%, 50%);
+    color:  hsl(220, 60%, 45%) ;
+    text-decoration-thickness: 2px;
+    
+}
+.move{
+    padding-left: 3%;
+    text-decoration: none;
+    margin-top: 2%;
+    color: hsl(220, 60%, 30%);
+    font-weight: bold;
+}
+.move a:hover{
+    text-decoration: underline;
+    text-decoration-color:  hsl(45, 90%, 50%);
+    color:  hsl(220, 60%, 45%) ;
+    text-decoration-thickness: 2px;
+    
+}
+.toProjects{
+   float: right;
+   margin-right: 2%;
+    text-decoration: underline;
+    text-decoration-color:  hsl(45, 90%, 50%);
+    color:  hsl(220, 60%, 45%) ;
+    text-decoration-thickness: 2px;
+    font-weight: bold;
+
+}
+.new{
+    color: red;
+}
+.layout form{
+    color: hsl(220, 60%, 25%);
+    
+}
+input,textarea,select{
+    background-color:  #fbf8f1;
+    width: 100%;
+    padding: 1%;
+    border: 1px solid #fbf8f1;
+    border-radius: 5%;
+    
+}
+input:hover,textarea:hover,select:hover{
+    border-color: hsl(220, 60%, 25%)  ;
+    border: 1px solid ;
+}
+.check {
+    width: auto;
+}
+#checkStyle{
+    font-weight: 400;
+    color:#2b2b2b ;
+}
+
+.layout span{
+    padding-right: 1%;
 }
 
 thead th{
     font-weight: bold;
 }
 
-.project1{
-    background-color: beige;
-}
-.project1 span{
-    color: red;
-}
 label{
     font-weight: bold;
 }
-input{
-    color: darkgreen;
-}
-form,select, input, textarea{
-    
-    color: hsl(220, 60%, 25%);
-    border-radius: 1%;
-}
+
 
 button{
     background-color: hsl(220, 60%, 30%);
@@ -200,14 +294,25 @@ button:hover{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
 }
 footer{
-    background-color: black;
+    background-color: hsl(220, 40%, 15%);
     color: white;
     text-align: center;
     width: 100%;
     padding: 5% 0 5% 0;
     margin-top: 2%;
 }
+
+footer ul li a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+footer ul li {
+    display: inline-block;
+}
 footer span {
     text-align: center;
+    
     
 }
