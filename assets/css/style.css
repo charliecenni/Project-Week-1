@@ -1,0 +1,213 @@
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: 'Inter', Arial, sans-serif ;
+    background-color: #f4f1ec;
+    margin: 0px;
+    margin-top: 0px;
+    color:#2b2b2b;
+
+}
+
+header{
+    background-image: url(/assets/img/header-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    background-position: bottom;
+    border-bottom: 5px solid gold;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    
+}
+
+header div{
+    text-align: center;
+    margin: 0 auto;
+}
+nav {
+    text-align: center;
+    margin-top: 5%;
+    font-weight: bold;
+    
+}
+h1{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+    font-family: 'Playfair Display', Georgia, serif;
+    
+}
+ 
+
+nav ul li a{
+    text-decoration: none;
+    border:1px solid rgba(255, 255, 255, 0.3) ; 
+    display: inline-block;
+    margin: 59% 2px; 
+    padding: 10px 18px;
+    border-radius: 10%;
+}
+nav ul li a:hover{
+    border: 1px solid hsl(45, 90%, 60%);
+    background-color: hsl(45, 90%, 60%)
+;
+}
+
+nav li{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+     
+}
+ul{
+    padding: 0%;
+}
+nav ul li:not(:last-child){
+margin: 0;    
+}
+nav a{
+    color:white;
+}
+
+main section{
+    height: fit-content;
+}
+img{
+    float: left;
+    border: 3px solid  rgba(255, 217, 0, 0.61);
+    border-radius: 50%;
+    margin-right: 1%;
+    margin-top: 1%;   
+}
+img+p::first-letter{
+   color: hsl(220, 60%, 25%);
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
+    font-weight: bolder; 
+    font-size: xx-large;
+}
+.section1{
+    margin-top: -5%;
+    width:auto;
+}
+.section1 h2{
+    clear: both;
+}
+section{
+    border: 1px solid whitesmoke;
+    border-radius: 3%;
+    background-color: white;
+    margin-left: 2%;
+    margin-right: 2%;
+    
+}
+section:not(:first-child){
+    margin-top: 3%;
+}
+.layout{
+    padding: 3% 4%;
+}
+progress{
+    display: block;
+}
+progress::-webkit-progress-bar{
+    background-color: #ece6d8;
+    
+}
+progress::-webkit-progress-value{
+    background-color: hsl(45, 90%, 50%);
+}
+.intTab{
+    color: hsl(220, 30%, 40%);
+    font-style: italic;
+}
+.table1 thead{
+color:hsl(220, 60%, 25%) ;
+background-color: #f4f1ec;
+
+}
+.icons2{
+    margin: 2% 2% 2% 0;
+    color: hsl(220, 60%, 25%);
+
+}
+.table1 tbody td{
+    border-bottom: 1px solid #ece6d8;
+}
+.gold{
+    color: hsl(45, 90%, 50%);
+    font-weight: bolder;
+}
+
+.blue{
+    color: hsl(220, 60%, 25%);
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+.red{
+    color: #f0e7c8
+;
+}
+.italic{
+    font-style: italic;
+}
+section ul :first-child{
+    font-weight: bold;
+}
+section ul li:nth-child(odd){
+    background-color: rgb(240, 239, 239);
+}
+
+thead th{
+    font-weight: bold;
+}
+
+.project1{
+    background-color: beige;
+}
+.project1 span{
+    color: red;
+}
+label{
+    font-weight: bold;
+}
+input{
+    color: darkgreen;
+}
+form,select, input, textarea{
+    
+    color: hsl(220, 60%, 25%);
+    border-radius: 1%;
+}
+
+button{
+    background-color: hsl(220, 60%, 30%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+    padding: 1% 3% 1% 3%;
+    border: 1px solid hsl(220, 60%, 30%);
+    border-radius: 10%;
+    font-weight: bold;
+}
+button:hover{
+    background-color: hsl(220, 60%, 45%); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 5% 0 5% 0;
+    margin-top: 2%;
+}
+footer span {
+    text-align: center;
+    
+}
