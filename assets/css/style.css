@@ -23,6 +23,7 @@ header{
     border-bottom: 5px solid gold;
     text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
 	box-shadow: inset 50px 50px 50px 50px rgba(0, 0, 0, 0.5);
+    text-align:center;
     
 }
 
@@ -40,9 +41,11 @@ header div{
 h1{
     color: white;
     text-align: center;
+    margin:0 auto;
     font-weight: bold;
     font-size: xx-large;
     font-family: 'Playfair Display', Georgia, serif;
+
       
 }
  
@@ -245,6 +248,8 @@ background-color: #f4f1ec;
     color:  hsl(220, 60%, 45%) ;
     text-decoration-thickness: 2px;
     font-weight: bold;
+    float:right;
+    margin-right:20px;
 
 }
 .new{
