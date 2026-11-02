@@ -325,7 +325,7 @@ footer span {
 /*Media queries*/
 @media screen and (min-width:768px) {
     nav ul{
-        margin-top:20%
+        margin-top:20%;
     }
     .section1 img{
         float:left;
@@ -345,4 +345,9 @@ footer span {
         max-width:576px;
     }
     
+}
+@media screen and (min-width:1200px) {
+    nav ul{
+        margin-top:13%;
+    }
 }
